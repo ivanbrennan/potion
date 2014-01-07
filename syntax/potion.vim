@@ -17,10 +17,17 @@ syntax match potionOperator "\v\*\="
 syntax match potionOperator "\v/\="
 syntax match potionOperator "\v\+\="
 syntax match potionOperator "\v-\="
+syntax match potionOperator "\v\:"
+syntax match potionOperator "\v\."
+syntax match potionNumber "\v\d+"
+syntax match potionNumber "\v\x+"
+syntax match potionNumber "\v\d+\.\d+"
+syntax match potionNumber "\v(\s|^)@<=\d+(\.\d+)?e(\+|\-)\d+"
 
 highlight link potionKeyword Keyword
 highlight link potionFunction Function
 highlight link potionComment Comment
 highlight link potionOperator Operator
+highlight link potionNumber Number
 
 let b:current_syntax = "potion"
