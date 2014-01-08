@@ -26,6 +26,7 @@ syntax match potionNumber "\v\d+\.\d+"
 syntax match potionNumber "\v(\s|^)@<=\d+(\.\d+)?e(\+|\-)\d+"
 
 syntax region potionString start=/\v"/ skip=/\v\\./ end=/\v"/
+syntax region potionString start=/\v'/ skip=/\v\\./ end=/\v'/
 
 highlight link potionKeyword Keyword
 highlight link potionFunction Function
