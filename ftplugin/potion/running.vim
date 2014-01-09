@@ -28,6 +28,7 @@ function! PotionShowBytecode()
     call append(0, split(bytecode, '\v\n'))
   else
     call append(0, "Error")
+  endif
 endfunc
 
 nnoremap <buffer> <localleader>r :w<cr>:call PotionCompileAndRunFile()<cr>
