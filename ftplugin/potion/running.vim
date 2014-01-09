@@ -16,7 +16,7 @@ function! PotionShowBytecode()
     " Open a new split and set it up.
     vsplit __Potion_Bytecode__
   else
-    bytewinnr wincmd w
+    execute bytewinnr . wincmd w
   endif
 
   normal! ggdG
