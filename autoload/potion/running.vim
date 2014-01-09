@@ -26,3 +26,5 @@ function! potion#running#PotionShowBytecode()
     call append(0, "Error")
   endif
 endfunc
+
+let ivar = "Ivan"
